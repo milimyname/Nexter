@@ -22,7 +22,7 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
-    "braces": "^3.0.2",
+    "braces": "^2.3.1",
     "kind-of": "^6.0.3",
     "mem": "^6.0.1"
   }
