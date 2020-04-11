@@ -1,0 +1,54 @@
+.sidebar{
+    background-color: $color-primary-dark;
+    grid-area: 1 / sidebar-start / -1 / sidebar-end;
+
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $bg-large) {
+        grid-area: 1 / 1 / 2 / -1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.nav-btn{
+    border: 0;
+    border-radius: 0;
+    margin-top: 4rem;
+
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+
+    @media only screen and (max-width: $bg-large) {
+        margin-top: 0;
+        margin-right: 3rem;
+    }
+
+    &::before,
+    &::after{
+        content: "";
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        width: 4.5rem;
+    }
+
+    &::before{ 
+        transform: translateY(-1.5rem);
+
+        @media only screen and (max-width: $bg-large) {
+            transform: translateY(-1.2rem);
+        }
+    }
+    &::after{ 
+        transform: translateY(1.3rem);
+        @media only screen and (max-width: $bg-large) {
+            transform: translateY(1rem);
+        }
+    }
+
+
+    
+}
